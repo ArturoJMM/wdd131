@@ -1,0 +1,168 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Kanit", sans-serif;
+}
+
+header h1 {
+	background-color: rgb(7, 85, 100);
+    font-family: "Sansita";
+    color: aliceblue;
+    margin: 0 auto;
+	max-width: 1000px;
+	display: flex;
+	justify-content: center;
+	padding: 40px;
+	border: 1px solid rgb(0 0 0 / 0.1);
+}
+
+.name {
+    color: rgb(203, 238, 45);
+}
+
+nav {
+	background-color: #22272b;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    font-family: "Sansita";
+    font-size: 25px;
+    color: aliceblue;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+main {
+	margin: 0 auto;
+    max-width: 1000px;
+}
+
+.profileimg {
+    width: 150px;
+    height: 200px;
+    border-radius: 5px; 
+}
+
+.flagimg {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.principal-div {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.card {
+    border: 1px solid rgb(7, 85, 100);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.card h2 {
+    background-color: rgb(7, 85, 100);
+    font-family: "Sansita";
+    color: aliceblue;
+    padding: 15px;
+    text-align: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.about-me {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+.about-me p {
+    width: 70%;
+    text-align: justify;
+    padding: 10px;
+}
+
+.my-country {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.my-country p {
+    width: 70%;
+    text-align: justify;
+    padding: 10px;
+}
+
+figcaption {
+    font-size: smaller;
+}
+
+h3 {
+    font-family: "Sansita";
+    display: inline-block;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    width: 50%;
+    padding-bottom: 10px;
+}
+
+
+.card ul {
+    list-style-type: none;
+    color: black;
+    
+}
+
+.card li {
+    font-family: "Sansita";
+    text-align: center;
+    font-size: 25px;
+    padding: 1rem;
+}  
+
+.card a {
+    text-decoration: none;
+    color: #22272b;
+}
+
+.card a:hover {
+    text-decoration: overline;
+}
+
+footer {
+    background-color: rgb(7, 85, 100);
+    padding: 3rem;
+    color: aliceblue;
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+    text-align: center;
+}

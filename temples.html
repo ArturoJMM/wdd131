@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="Picture Album of the temples around the world with responsive behavior for the mobile format and large Screen format.">
+    <meta name="author" content="Arturo Jose Mendez Medina">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#" data-title="Home">Home</a></li>
+                    <li><a href="#" data-title="Old">Old</a></li>
+                    <li><a href="#" data-title="New">New</a></li>
+                    <li><a href="#" data-title="Large">Large</a></li>
+                    <li><a href="#" data-title="Small">Small</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="menuTitle" id="menuTitle">Home</h2>
+            <div class="container menuTitle">
+                <figure>
+                    <img src="images/bogota-temple.jpg" alt="Bogotá, Colombia Temple">
+                    <figcaption>Bogotá, Colombia Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/buenosAires-temple.jpg" alt="Buenos Aires, Argentina Temple">
+                    <figcaption>Buenos Aires, Argentina Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/caracas-temple.jpg" alt="Caracas, Venezuela Temple">
+                    <figcaption>Caracas, Venezuela Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/draper-utah-temple.jpg" alt="Draper, Utah Temple">
+                    <figcaption>Draper, Utah Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/los-olivos-temple.jpg" alt="Los Olivos, Lima, Perú Temple">
+                    <figcaption>Los Olivos, Lima, Perú Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lima-temple.jpg" alt="Lima, Perú Temple">
+                    <figcaption>Lima, Perú Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/arequipa-temple.jpg" alt="Arequipa, Perú Temple">
+                    <figcaption>Arequipa, Perú Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/trujillo-temple.jpg" alt="Trujillo, Perú Temple">
+                    <figcaption>Trujillo, Perú Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/salt-lake-temple.jpg" alt="Salt Lake, Utah Temple">
+                    <figcaption>Salt Lake, Utah Temple</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>   
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Arturo Mendez. Lima, Perú.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

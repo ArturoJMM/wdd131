@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+header {
+    background-color: rgb(85, 27, 192);
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+header, main, footer {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+@media (max-width: 600px) { 
+    nav { 
+        display: none; 
+    } 
+    .menu-icon { 
+        display: block; 
+        cursor: pointer; 
+        text-align: right; 
+        position: absolute; 
+        right: 10px; top: 20px; 
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+    } 
+}
+
+nav.active {
+    display: block;
+
+}
+
+nav ul {
+    list-style: none;
+	display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: block;
+	color: aliceblue;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: medium;
+}
+
+nav a:hover {
+    background-color: aliceblue;
+	color: #000;
+}
+
+main img {
+    width: 200px;
+    
+}
+
+section h2 {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+figure {
+    font-size: 12px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(85, 27, 192);
+    align-items: center;
+    color: aliceblue;
+    padding: 2rem;
+    text-align: center;
+}
+
+

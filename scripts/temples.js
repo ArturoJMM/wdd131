@@ -4,9 +4,9 @@ const full = document.querySelector("#lastModified");
 
 const today = new Date();
 
-year.innerHTML = `${today.getFullYear()}</span>`;
+year.innerHTML = `${today.getFullYear()}`;
 
-full.innerHTML = `Last modified: ${new Intl.DateTimeFormat("en-US",{dateStyle: "full"}).format(today)}</span>`;
+full.innerHTML = `Last modified: ${new Intl.DateTimeFormat("en-US",{dateStyle: "full"}).format(today)}`;
 
 // Code for the menu Icon behavior 
 const menuIcon = document.getElementById('menu-icon'); 

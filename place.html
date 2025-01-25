@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Venezuela place Page, general information and weather data about the venezuelan country.">
+    <meta name="author" content="Arturo Jose Mendez Medina">
+    <link rel="stylesheet" href="styles/place-mobile.css">
+    <link rel="stylesheet" href="styles/place-wide.css">
+    <script src="scripts/place.js" defer></script>
+    <title>Venezuela</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>VENEZUELA</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/place-img/capibara_11zon.webp" media="(min-width: 600px)">
+                <img class="hero-img" src="images/place-img/Guacamaya_11zon.webp" alt="Fauna de Venezuela" height="533">
+            </picture>
+            <div class="data">
+                <h2>Data</h2>
+                <div class="data-table">
+                    <table class="table1">
+                        <tr>
+                            <th>Capital:</th>
+                            <td>Caracas</td>
+                        </tr>
+                        <tr>
+                            <th>Population:</th>
+                            <td>28.5 million</td>
+                        </tr>
+                        <tr>
+                            <th>Area:</th>
+                            <td>916.000 Km<sup>2</sup></td>
+                        </tr>
+                        <tr>
+                            <th>Language:</th>
+                            <td>Spanish</td>
+                        </tr>
+                        <tr>
+                            <th>Currency:</th>
+                            <td>Bolivar</td>
+                        </tr>
+                        <tr>
+                            <th>Climate:</th>
+                            <td>Hot Tropical</td>
+                        </tr>
+                        <tr>
+                            <th>Independence:</th>
+                            <td>July 5th, 1811</td>
+                        </tr>
+                        <tr>
+                            <th>Main Exports:</th>
+                            <td>Oil, minerals</td>
+                        </tr>
+                        <tr>
+                            <th>Landmarks:</th>
+                            <td>Angel Falls, Los Roques</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="weather">
+                <div class="header-weather">
+                    <h2>Weather</h2>
+                    <img src="images/place-img/1530391_weather_clouds_sun_sunny_icon.svg" alt="Weather Icon">
+                </div>
+                <div class="weather-table">
+                    <table class="table2">
+                        <tr>
+                            <th>Temperature:</th>
+                            <td>28 °C</td>
+                        </tr>
+                        <tr>
+                            <th>Conditions:</th>
+                            <td>Clear</td>
+                        </tr>
+                        <tr>
+                            <th>Wind:</th>
+                            <td>5 Km/h</td>
+                        </tr>
+                        <tr>
+                            <th>Wind Chill:</th>
+                            <td id="windChill"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+         </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> &#x1F30E; Arturo Mendez. Lima, Perú. &#x1F30E;</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>

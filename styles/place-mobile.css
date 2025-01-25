@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0b0ba8;
+    --secondary-color: #f8f813;
+    --third-color: #b90f0f;
+    --mainTitle-font: "Permanent Marker", "Sans Serif";
+    --heading-fonts: "Montserrat", "Sans Serif";
+}
+
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+header {
+    background-color: #0b0ba8;
+    color: aliceblue;
+    border-top: 15px solid var(--secondary-color);
+    border-bottom: 15px solid var(--third-color);
+    
+}
+
+h1 {
+    font-family: var(--mainTitle-font);
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+}
+
+header, main, footer {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 5px solid var(--third-color);
+}
+
+h2, th {
+    font-family: var(--heading-fonts);
+}
+
+h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+table {
+    width: 100%;
+}
+
+.data-table { 
+    padding-bottom: 1.2rem;
+}
+
+th {
+    width: 50%;
+    height: auto;
+    text-align: right;
+    padding: 0.2rem 1.5rem;
+}
+
+table td {
+    font-size: 16px;
+    font-style: italic;
+    text-align: left;
+}
+
+.weather {
+    border-top: 1px solid rgba(80, 79, 79, 0.315);
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.header-weather img {
+    width: 80px;
+}
+
+footer {
+    background-color: var(--third-color);
+    font-family: var(--heading-fonts);
+    align-items: center;
+    color: aliceblue;
+    padding: 2rem;
+    text-align: center;
+}
+

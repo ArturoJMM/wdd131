@@ -73,5 +73,9 @@
     .weather-heading::after {
         content: '🌤️';
         padding-left: 10px;
-    }   
+    }
+    
+    footer {
+        font-size: 25px;
+    }
 }

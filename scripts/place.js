@@ -15,4 +15,4 @@ function calculateWindChill(temp=10, windSpeed=5) {
 }
 
 const windChill = document.querySelector("#windChill");
-windChill.innerHTML = calculateWindChill(10, 5);
+windChill.innerHTML = `${calculateWindChill(10, 5)} °C`;

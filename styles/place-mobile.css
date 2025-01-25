@@ -82,9 +82,6 @@ table td {
     text-align: center;
 }
 
-.header-weather img {
-    width: 80px;
-}
 
 footer {
     background-color: var(--third-color);
@@ -94,4 +91,7 @@ footer {
     padding: 2rem;
     text-align: center;
 }
+
+
+
 

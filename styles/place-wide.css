@@ -6,9 +6,10 @@
     }
 
     h1 {
-        font-size: 32px;
+        font-size: 50px;
     }
 
+  
     .data {
         position: absolute;
         top: 5%;
@@ -68,5 +69,9 @@
     .table2 {
         font-size: 18px;
     }
-     
+
+    .weather-heading::after {
+        content: '🌤️';
+        padding-left: 10px;
+    }   
 }

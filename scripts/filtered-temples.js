@@ -113,59 +113,59 @@ document.addEventListener("DOMContentLoaded", function() {
 
     ];
 
-  createTempleCard(temples);
+    createTempleCard(temples);
 
-  const home = document.querySelector("#home");
-  const old = document.querySelector("#old");
-  const recent = document.querySelector("#new");
-  const large = document.querySelector("#large");
-  const small = document.querySelector("#small");
+    const home = document.querySelector("#home");
+    const old = document.querySelector("#old");
+    const recent = document.querySelector("#new");
+    const large = document.querySelector("#large");
+    const small = document.querySelector("#small");
 
-  home.addEventListener("click", () => {
-      createTempleCard(temples);
-  });
+    home.addEventListener("click", () => {
+        createTempleCard(temples);
+    });
 
-  old.addEventListener("click", () => {
-      createTempleCard(temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900));
-  });
+    old.addEventListener("click", () => {
+        createTempleCard(temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900));
+    });
 
-  recent.addEventListener("click", () => {
-      createTempleCard(temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000));
-  });
+    recent.addEventListener("click", () => {
+        createTempleCard(temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000));
+    });
 
-  large.addEventListener("click", () => {
-      createTempleCard(temples.filter(temple => temple.area > 90000));
-  });
+    large.addEventListener("click", () => {
+        createTempleCard(temples.filter(temple => temple.area > 90000));
+    });
 
-  small.addEventListener("click", () => {
-      createTempleCard(temples.filter(temple => temple.area < 10000));
-  });
+    small.addEventListener("click", () => {
+        createTempleCard(temples.filter(temple => temple.area < 10000));
+    });
 
-  function createTempleCard(filteredTemples) {
-      document.querySelector(".container").innerHTML = "";
-      filteredTemples.forEach(temple => {
-          let card = document.createElement("section");
-          let name = document.createElement("h3");
-          let location = document.createElement("p");
-          let dedication = document.createElement("p");
-          let area = document.createElement("p");
-          let img = document.createElement("img");
+    function createTempleCard(filteredTemples) {
+        document.querySelector(".container").innerHTML = "";
+        filteredTemples.forEach(temple => {
+            let card = document.createElement("section");
+            let name = document.createElement("h3");
+            let location = document.createElement("p");
+            let dedication = document.createElement("p");
+            let area = document.createElement("p");
+            let img = document.createElement("img");
 
-          name.textContent = temple.templeName;
-          location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
-          dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
-          area.innerHTML = `<span class="label">Area:</span> ${temple.area} sq ft`;
-          img.setAttribute("src", temple.imageUrl);
-          img.setAttribute("alt", temple.templeName);
-          img.setAttribute("loading", "lazy");
+            name.textContent = temple.templeName;
+            location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+            dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+            area.innerHTML = `<span class="label">Area:</span> ${temple.area} sq ft`;
+            img.setAttribute("src", temple.imageUrl);
+            img.setAttribute("alt", temple.templeName);
+            img.setAttribute("loading", "lazy");
 
-          card.appendChild(name);
-          card.appendChild(location);
-          card.appendChild(dedication);
-          card.appendChild(area);
-          card.appendChild(img);
+            card.appendChild(name);
+            card.appendChild(location);
+            card.appendChild(dedication);
+            card.appendChild(area);
+            card.appendChild(img);
 
-          document.querySelector(".container").appendChild(card);
+            document.querySelector(".container").appendChild(card);
       });
-  }
+    }
 });

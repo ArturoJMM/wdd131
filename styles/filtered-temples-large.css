@@ -1,0 +1,41 @@
+@media (min-width: 600px) {
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	nav ul {
+        display: flex;
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	nav a {
+		flex: 1 1 100%;
+	}
+
+    .menu-icon {
+        display: none;
+    }
+
+    .container {
+        display:grid; 
+        grid-template-columns: repeat(2, minmax(200px, 1fr)); 
+        grid-gap: 20px;
+        place-items: center;
+        padding-bottom: 3rem;
+    }
+
+    h2 {
+        padding: 2rem;
+    }
+
+    section {
+        width: 100%;
+        margin: auto;
+    }
+
+    section img {
+        width: 70%;
+    }
+
+}

@@ -119,3 +119,13 @@ footer {
     margin: 1rem 2% 1rem 2%;
     box-shadow: 1px 1px 4px #999;
 }
+
+.confirmPage {
+    padding: 10rem 2%;
+}
+
+.confirmPage p {
+    font-family: var(--titles-font);
+    padding-bottom: 4rem;
+    text-align: center;
+}

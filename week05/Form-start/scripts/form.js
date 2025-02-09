@@ -45,3 +45,14 @@ window.addEventListener("DOMContentLoaded", (event) => {
         selectElement.appendChild(option);
     });
 });
+
+    // Increment the review counter in localStorage
+    let reviewCounter = localStorage.getItem("reviewCounter");
+    if (reviewCounter === null) {
+        reviewCounter = 0;
+    }
+    reviewCounter++;
+    localStorage.setItem("reviewCounter", reviewCounter);
+
+    // Display the review count
+    document.getElementById("counter").textContent = reviewCounter;

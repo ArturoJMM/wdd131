@@ -129,3 +129,39 @@ footer {
     padding-bottom: 4rem;
     text-align: center;
 }
+
+.success {
+    font-size: 32px;
+}
+
+.completed p{
+    font-family: var(--titles-font);
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+}
+
+.completed span {
+    font-family: var(--body-font);
+    font-weight: 700;
+    font-size: 26px;
+    color: rgb(175, 3, 3);
+    padding-left: .5rem;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back a {
+    text-decoration: none;
+    font-family: var(--titles-font);
+    font-size: large;
+    color: aliceblue;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    background-image: linear-gradient(rgb(90, 90, 233), rgb(18, 8, 102));
+    
+}

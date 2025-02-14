@@ -49,23 +49,25 @@
         </section>
         <!-- Form Section -->
         <section class="section-form">
-            <form>
+            <h4>If you need some special Cake or Dessert, let us know here:</h4>
+            <form method="get" class="form" id="requirementForm">
+                
                 <label for="Fname">First Name:</label>
-                <input type="text" id="Fname" name="Lname" required>
+                <input type="text" id="Fname" name="Lname" placeholder="First Name" required>
 
                 <label for="Lname">Last Name:</label>
-                <input type="text" id="Lname" name="Lname" required>
+                <input type="text" id="Lname" name="Lname" placeholder="Last Name" required>
 
                 <label for="phone">Phone Number:</label>
-                <input type="number" id="phone" name="phone" required>
+                <input type="number" id="phone" name="phone" placeholder="111222333">
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="mymail@mail.com">
 
                 <label for="review">Questions or Special Requirements: <span class="optional">(Optional)</span></label>
                 <textarea name="review" id="review"></textarea>
 
-                <button type="submit">Enviar</button>
+                <input type="submit" value="Send my Requirement">
             </form>
         </section>
     </main>

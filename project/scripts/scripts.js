@@ -6,26 +6,47 @@ const today = new Date();
 year.innerHTML = `${today.getFullYear()}`;
 full.innerHTML = `Last modified: ${new Intl.DateTimeFormat("en-US",{dateStyle: "full"}).format(today)}`;
 
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("requirementForm");
 
-// Formulario de contacto con localStorage
-const form = document.querySelector("form");
-if (form) {
-    form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
+    // JavaScript Functions
+    function saveFormDataToLocalStorage(formData) {
+        
+        // JavaScript Arrays and Array Methods
+        const formDataObject = {};
+        
+        //JavaScript Objects
+        formData.forEach((value, key) => {
+            if (value.trim() !== "") { 
+                formDataObject[key] = value;
+            }
+        });
 
-        // Guardar en localStorage
-        localStorage.setItem("userData", JSON.stringify({ name, email }));
-
-        alert(`Gracias por contactarnos, ${name}!`);
-        form.reset();
-    });
-
-    // Cargar datos guardados
-    const savedData = JSON.parse(localStorage.getItem("userData"));
-    if (savedData) {
-        document.getElementById("name").value = savedData.name || "";
-        document.getElementById("email").value = savedData.email || "";
+        // saving instruction
+        localStorage.setItem("requirementData", JSON.stringify(formDataObject));
     }
-}
+
+    // Listener for the form event
+    form.addEventListener("submit", (event) => {
+        // avoid default behavior of the form
+        event.preventDefault();
+
+        // Capture the form data
+        const formData = new FormData(form);
+
+        // Conditional for validate the requirement of a number and a email
+        const email = formData.get("email");
+        const phone = formData.get("phone");
+
+        if (!email && !phone) {
+            alert(`Please provide either an email or a phone number.`); // JavaScript Template Literals
+            return;
+        }
+
+        // Call the saving function
+        saveFormDataToLocalStorage(formData);
+
+        // Reroute user to confirmation page.
+        window.location.href = "review.html";
+    });
+});

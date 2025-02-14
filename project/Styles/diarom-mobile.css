@@ -1,0 +1,89 @@
+
+@media (max-width: 600px) {
+
+}
+/* Header */
+header {
+    background: linear-gradient(to right, #f9e79f, #f5cba7);
+    color: #333;
+
+}
+
+.header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+
+.title h1 {
+    font-size: 2rem;
+}
+
+.title p {
+    font-size: 1rem;
+}
+
+/* Navegación */
+nav {
+    padding: 10px;
+}
+
+nav a {
+    margin: 0 10px;
+    font-size: 0.9rem;
+}
+
+/* Sección Hero */
+.hero {
+    height: 300px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+}
+
+/* Sección Productos */
+.section {
+    padding: 40px 10px;
+}
+
+.section h2 {
+    font-size: 2rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery img {
+    height: auto; /* Altura automática para adaptarse mejor */
+    width: 100%;
+    max-width: 300px; /* Ancho máximo para evitar desbordamientos */
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery figcaption {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    padding: 15px 0;
+}
+
+footer #current-date-time {
+    font-size: 0.8rem;
+}

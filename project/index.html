@@ -42,13 +42,16 @@
 
         <main>
         <!-- Hero section -->
-            <section class="hero">
-                <img class="heroimg" src="images/Hero Images/hero-img8.webp" alt="Diarom Home img">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/Hero Images/hero-img8-mobile.webp" media="(max-width: 600px)">
+                    <img class="heroimg" src="images/Hero Images/hero-img8.webp" alt="Diarom Home img" height="300">
+                </picture>
                     <h2>Delights made with Love</h2>
                     <div>
                         <a href="catalog.html" class="floating-btn">Products Catalog</a>
                     </div>
-            </section>
+                </div>
         <!-- Products categories section -->
             <section class="category" id="products">
                 <h2>Categories of Products</h2>

@@ -55,6 +55,7 @@
     .hero {
         height: 300px; 
     }
+    
     .hero h2 {
         font-size: 1.5rem; 
         top: 10%;
@@ -70,6 +71,15 @@
     }
 
     /* Gallery Section */
+    
+    .gallery figcaption {
+        transform: none; 
+    }
+
+    .category h2 {
+        font-size: 1.5rem;
+    }
+
     .gallery {
         gap: 20px;
     }
@@ -78,7 +88,7 @@
         height: auto; 
     }
     .gallery figcaption {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     /* Catalog Page - Product Grid */
